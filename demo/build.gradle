@@ -1,3 +1,17 @@
+plugins {
+    id 'java' // Apply the Java plugin
+}
+
+group 'com.example.demo' // Set the group
+version '1.0.0' // Set the version
+
+repositories {
+    mavenCentral() // Specify a repository where required dependencies are located
+}
+
+dependencies {
+    implementation project(path: ':utils') // Add a dependency to the 'utils' module
+}
 //add everything here
 
 test {
