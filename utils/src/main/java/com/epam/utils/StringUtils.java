@@ -2,6 +2,11 @@ package com.epam.utils;
 
 public class StringUtils {
     public static boolean isPositiveNumber(String str) {
-        return org.apache.commons.lang3.StringUtils.isNumeric(str) && Integer.parseInt(str) > 0;
+        try {
+            double num = Double.parseDouble(str);
+            return num > 0;
+        } catch (NumberFormatException e) {
+            return false; // Parsing failed, not a valid number
+        }
     }
 }
