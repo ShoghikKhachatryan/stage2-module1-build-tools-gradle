@@ -1,4 +1,3 @@
-//add everything here
 plugins {
     id 'java' // Apply the Java plugin
 }
