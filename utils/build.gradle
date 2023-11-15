@@ -26,6 +26,7 @@ publishing {
 
 dependencies {
     implementation 'org.apache.commons:commons-lang3:3.10' // Add Apache Commons Lang 3.10 dependency
+    testImplementation 'junit:junit:4.11'
 }//add Apache Apache Commons Lang 3.10 (or higher) dependency
 
 jar {
